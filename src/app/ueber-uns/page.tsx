@@ -66,8 +66,8 @@ export default function UeberUnsPage() {
             <div className="md:w-1/2 w-full">
               <ScrollReveal animation="clip-left" className="relative aspect-[4/3] overflow-hidden">
                 <img
-                  src="/images/gallery-interior.jpg"
-                  alt="Restaurant Ambiente"
+                  src="/images/terasse.webp"
+                  alt="Terrasse"
                   className="w-full h-full object-cover"
                 />
               </ScrollReveal>

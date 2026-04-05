@@ -80,7 +80,7 @@ export default function Home() {
         </section>
 
         {/* ═══════════════════ WILLKOMMEN ═══════════════════ */}
-        <section className="relative py-20 md:py-24 lg:py-28 px-4 noise-overlay">
+        <section className="relative py-14 md:py-20 px-4 noise-overlay">
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <ScrollReveal animation="fade-in">
               <span className="ornament text-red text-[10px] font-bold tracking-[0.4em] uppercase">
@@ -91,27 +91,29 @@ export default function Home() {
             <TextReveal
               mode="words"
               delay={0.2}
-              className="mt-8 text-3xl md:text-5xl lg:text-6xl font-bold text-navy leading-[1.15] tracking-tight"
+              className="mt-6 text-3xl md:text-5xl lg:text-6xl font-bold text-navy leading-[1.15] tracking-tight"
             >
               {siteData.welcome.headline}
             </TextReveal>
 
             <ScrollReveal delay={0.4} animation="fade-up">
-              <p className="mt-8 text-gold text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+              <p className="mt-6 text-gold text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
                 {siteData.welcome.text}
               </p>
             </ScrollReveal>
+          </div>
+        </section>
 
-            <ScrollReveal delay={0.6} animation="fade-up">
-              <div className="mt-12">
-                <div className="w-10 h-[1px] bg-red/40 mx-auto" />
-                <blockquote className="mt-8 italic text-navy/50 text-xl md:text-2xl leading-relaxed">
-                  &laquo;{siteData.welcome.quote}&raquo;
-                </blockquote>
-                <p className="mt-4 text-gold/60 text-sm tracking-widest uppercase">
-                  — {siteData.welcome.quoteAuthor}
-                </p>
-              </div>
+        {/* ═══════════════════ ZITAT — Highlighted ═══════════════════ */}
+        <section className="relative bg-navy py-14 md:py-20 px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <ScrollReveal animation="scale-in">
+              <blockquote className="text-2xl md:text-3xl italic text-cream/90 leading-relaxed">
+                &laquo;{siteData.welcome.quote}&raquo;
+              </blockquote>
+              <p className="mt-4 text-gold-light/80 text-sm tracking-widest uppercase">
+                — {siteData.welcome.quoteAuthor}
+              </p>
             </ScrollReveal>
           </div>
         </section>
