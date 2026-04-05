@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
+import ScrollReveal from "@/components/ScrollReveal";
+import TextReveal from "@/components/TextReveal";
 import siteData from "../../../content/site.json";
 
 export const metadata: Metadata = {
@@ -16,92 +20,150 @@ export default function UeberUnsPage() {
   return (
     <>
       <Header />
-      <main className="pt-24 pb-16">
-        {/* Hero */}
-        <section className="relative h-[40vh] flex items-center justify-center overflow-hidden">
-          <img src="/images/about-hero.jpg" alt="Restaurant Innenraum" className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-navy/50" />
+      <main>
+        {/* ═══════════════════ HERO ═══════════════════ */}
+        <section className="relative min-h-[50vh] md:min-h-[60vh] flex items-center justify-center overflow-hidden">
+          <img
+            src="/images/Umbau.webp"
+            alt="Restaurant Innenraum"
+            className="absolute inset-0 w-full h-full object-cover hero-ken-burns"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/30 to-navy/70" />
+          <div className="absolute inset-0 golden-vignette" />
+
           <div className="relative z-10 text-center px-4">
-            <span className="text-red text-xs font-bold tracking-[0.3em] uppercase">
-              Osteria Tintarella
-            </span>
-            <h1 className="mt-2 text-4xl md:text-5xl font-bold text-white">
+            <ScrollReveal animation="fade-in">
+              <p className="text-gold-light text-[10px] md:text-xs tracking-[0.4em] uppercase mb-4">
+                Osteria Tintarella
+              </p>
+            </ScrollReveal>
+            <TextReveal className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[1.1]">
               {about.headline}
-            </h1>
+            </TextReveal>
           </div>
         </section>
 
-        {/* Story */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="max-w-2xl mx-auto">
-            <p className="text-lg text-navy leading-relaxed font-bold">
-              {about.intro}
-            </p>
-            <p className="mt-6 text-gold leading-relaxed">{about.story}</p>
+        {/* ═══════════════════ INTRO ═══════════════════ */}
+        <section className="relative py-20 md:py-28 px-4 noise-overlay">
+          <div className="relative z-10 max-w-3xl mx-auto text-center">
+            <ScrollReveal animation="fade-in">
+              <div className="ornament mb-8">
+                <span className="text-red text-lg">&#10045;</span>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal animation="fade-up" delay={0.1}>
+              <p className="text-xl md:text-2xl text-navy leading-relaxed font-bold">
+                {about.intro}
+              </p>
+            </ScrollReveal>
           </div>
         </section>
 
-        {/* Warum Tintarella */}
-        <section className="py-16 md:py-24 px-4 bg-cream-dark">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
-              Warum &bdquo;Tintarella&ldquo;?
-            </h2>
-            <p className="text-gold leading-relaxed">{about.nameOrigin}</p>
-          </div>
-        </section>
+        {/* ═══════════════════ WARUM TINTARELLA — Split Layout ═══════════════════ */}
+        <section className="relative bg-navy py-20 md:py-28 overflow-hidden">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20 px-6">
+            {/* Image */}
+            <div className="md:w-1/2 w-full">
+              <ScrollReveal animation="clip-left" className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/gallery-interior.jpg"
+                  alt="Restaurant Ambiente"
+                  className="w-full h-full object-cover"
+                />
+              </ScrollReveal>
+            </div>
 
-        {/* Der Umbau */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
-              Der Umbau
-            </h2>
-            <p className="text-gold leading-relaxed">{about.renovation}</p>
-          </div>
-        </section>
-
-        {/* Unsere Küche */}
-        <section className="py-16 md:py-24 px-4 bg-cream-dark">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
-              Unsere Küche
-            </h2>
-            <p className="text-gold leading-relaxed">{about.cuisine}</p>
-          </div>
-        </section>
-
-        {/* Team */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-navy mb-10">
-              Die junge Generation
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {about.team.map((member, idx) => (
-                <div key={member.name} className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-                    <img src={idx === 0 ? "/images/team-1.jpg" : "/images/team-2.jpg"} alt={member.name} className="w-full h-full object-cover" />
-                  </div>
-                  <h3 className="font-bold text-navy text-lg">{member.name}</h3>
-                  <p className="text-gold text-sm">{member.role}</p>
-                </div>
-              ))}
+            {/* Content */}
+            <div className="md:w-1/2">
+              <ScrollReveal animation="fade-in">
+                <p className="text-gold-light text-[10px] tracking-[0.4em] uppercase mb-4">
+                  Il Nome
+                </p>
+              </ScrollReveal>
+              <TextReveal delay={0.1} className="text-3xl md:text-4xl lg:text-5xl font-bold text-cream leading-[1.1] mb-8">
+                Warum &bdquo;Tintarella&ldquo;?
+              </TextReveal>
+              <ScrollReveal animation="fade-up" delay={0.2}>
+                <p className="text-cream/70 leading-relaxed text-lg">
+                  {about.nameOrigin}
+                </p>
+              </ScrollReveal>
             </div>
           </div>
         </section>
 
-        {/* Zitat */}
-        <section className="py-16 md:py-24 px-4 bg-cream-dark">
-          <div className="max-w-2xl mx-auto">
-            <div className="border-l-4 border-red pl-6 py-2">
-              <blockquote className="text-xl italic text-navy leading-relaxed">
+        {/* ═══════════════════ UNSERE KÜCHE — Reverse Split ═══════════════════ */}
+        <section className="relative py-20 md:py-28 overflow-hidden">
+          <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-12 md:gap-20 px-6">
+            {/* Image */}
+            <div className="md:w-1/2 w-full">
+              <ScrollReveal animation="clip-right" className="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src="/images/Umbau.webp"
+                  alt="Küche und Ambiente"
+                  className="w-full h-full object-cover"
+                />
+              </ScrollReveal>
+            </div>
+
+            {/* Content */}
+            <div className="md:w-1/2">
+              <ScrollReveal animation="fade-in">
+                <p className="text-red text-[10px] tracking-[0.4em] uppercase mb-4">
+                  Cucina Italiana
+                </p>
+              </ScrollReveal>
+              <TextReveal delay={0.1} className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy leading-[1.1] mb-8">
+                Unsere Küche
+              </TextReveal>
+              <ScrollReveal animation="fade-up" delay={0.2}>
+                <p className="text-gold leading-relaxed text-lg">
+                  {about.cuisine}
+                </p>
+              </ScrollReveal>
+            </div>
+          </div>
+        </section>
+
+        {/* ═══════════════════ ZITAT ═══════════════════ */}
+        <section className="relative bg-navy py-20 md:py-28 px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <ScrollReveal animation="scale-in">
+              <div className="ornament mb-10">
+                <span className="text-red text-lg">&#10045;</span>
+              </div>
+              <blockquote className="text-2xl md:text-3xl italic text-cream/90 leading-relaxed">
                 &laquo;{about.quote}&raquo;
               </blockquote>
-              <p className="mt-4 text-gold text-sm">
+              <p className="mt-6 text-gold-light text-sm tracking-widest uppercase">
                 — {about.quoteAuthor}
               </p>
-            </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ═══════════════════ CTA ═══════════════════ */}
+        <section className="py-16 md:py-20 px-6 text-center noise-overlay">
+          <div className="relative z-10">
+            <ScrollReveal animation="fade-up">
+              <p className="text-gold text-sm mb-6">Lernen Sie unsere Küche kennen</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/speisekarte"
+                  className="btn-glow bg-red text-white px-10 py-4 font-bold text-sm tracking-widest uppercase text-center"
+                >
+                  Speisekarte
+                </Link>
+                <a
+                  href={siteData.opentable.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-ghost border border-navy/20 text-navy px-10 py-4 font-bold text-sm tracking-widest uppercase text-center"
+                >
+                  Tisch reservieren
+                </a>
+              </div>
+            </ScrollReveal>
           </div>
         </section>
       </main>

@@ -16,11 +16,16 @@ export default function Home() {
       <main>
         {/* ═══════════════════ HERO — Cinematic ═══════════════════ */}
         <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
-          {/* Ken Burns background */}
+          {/* Ken Burns background — mobile / desktop */}
+          <img
+            src="/images/pasta-mobile.jpg"
+            alt="Osteria Tintarella"
+            className="absolute inset-0 w-full h-full object-cover hero-ken-burns md:hidden"
+          />
           <img
             src="/images/pasta.jpg"
             alt="Osteria Tintarella"
-            className="absolute inset-0 w-full h-full object-cover hero-ken-burns"
+            className="absolute inset-0 w-full h-full object-cover hero-ken-burns hidden md:block"
           />
           {/* Multi-layer gradient for depth */}
           <div className="absolute inset-0 bg-gradient-to-b from-navy/50 via-navy/30 to-navy/70" />
