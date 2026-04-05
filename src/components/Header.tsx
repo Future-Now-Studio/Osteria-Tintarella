@@ -46,7 +46,6 @@ export default function Header() {
             {[
               { href: "/speisekarte", label: "Speisekarte" },
               { href: "/ueber-uns", label: "Über uns" },
-              { href: "/galerie", label: "Galerie" },
             ].map(({ href, label }) => (
               <Link
                 key={href}

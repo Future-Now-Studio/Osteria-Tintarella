@@ -78,14 +78,6 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             Über uns
           </Link>
           <Link
-            href="/galerie"
-            onClick={onClose}
-            className="text-navy font-charter font-bold text-2xl tracking-wide"
-          >
-            Galerie
-          </Link>
-
-          <Link
             href="/#reservierung"
             onClick={onClose}
             className="mt-4 bg-red text-white rounded-full px-10 py-4 text-lg font-bold tracking-wide uppercase hover:bg-red-dark transition-colors"
