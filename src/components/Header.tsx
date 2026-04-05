@@ -36,7 +36,7 @@ export default function Header() {
               width={180}
               height={45}
               className={`transition-all duration-500 h-auto ${
-                isTransparent ? "w-[160px] brightness-0 invert" : "w-[140px]"
+                isTransparent ? "w-[160px] brightness-0 invert opacity-0" : "w-[140px] opacity-100"
               }`}
               priority
             />

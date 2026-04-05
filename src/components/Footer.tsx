@@ -30,7 +30,7 @@ export default function Footer() {
               </div>
               <div className="flex justify-between max-w-[260px] mx-auto md:mx-0">
                 <span>Samstag</span>
-                <span>12 – 22 (durchgehend)</span>
+                <span>12 – 22</span>
               </div>
               <div className="flex justify-between max-w-[260px] mx-auto md:mx-0">
                 <span>Sonntag</span>

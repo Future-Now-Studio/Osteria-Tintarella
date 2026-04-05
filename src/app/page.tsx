@@ -48,18 +48,20 @@ export default function Home() {
             </p>
 
             <div className="hero-stagger-3 mt-12 flex flex-col sm:flex-row gap-4">
-              <Link
-                href="#reservierung"
-                className="btn-glow bg-red text-white px-10 py-4 font-bold text-sm tracking-widest uppercase"
+              <a
+                href={siteData.opentable.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-glow bg-red text-white px-10 py-4 font-bold text-sm tracking-widest uppercase text-center"
               >
-                Tisch reservieren
-              </Link>
-              <Link
-                href="/speisekarte"
-                className="btn-ghost border border-cream/30 text-cream px-10 py-4 font-bold text-sm tracking-widest uppercase"
+                Jetzt reservieren
+              </a>
+              <a
+                href={`tel:${siteData.phoneRaw}`}
+                className="btn-ghost border border-cream/30 text-cream px-10 py-4 font-bold text-sm tracking-widest uppercase text-center"
               >
-                Speisekarte
-              </Link>
+                Anrufen
+              </a>
             </div>
           </div>
 
@@ -253,10 +255,10 @@ export default function Home() {
                     <p className="text-cream/70 text-lg leading-relaxed">
                       {siteData.about.intro}
                     </p>
-                    <blockquote className="mt-6 italic text-cream/40 text-base">
+                    <blockquote className="mt-6 italic text-cream/80 text-base">
                       &laquo;{siteData.about.quote}&raquo;
                     </blockquote>
-                    <p className="mt-2 text-gold/50 text-xs tracking-widest uppercase">
+                    <p className="mt-2 text-gold-light/80 text-xs tracking-widest uppercase">
                       — {siteData.about.quoteAuthor}
                     </p>
                   </div>
@@ -298,101 +300,106 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Left: Info */}
-              <div className="space-y-8">
-                <ScrollReveal animation="fade-up">
-                  <div className="bg-white p-8 hover:shadow-lg transition-shadow duration-500">
-                    <h3 className="font-bold text-navy text-sm tracking-[0.15em] uppercase mb-5">
-                      Öffnungszeiten
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      {siteData.openingHours.map((h) => (
-                        <div key={h.days} className="flex justify-between">
-                          <span className="font-bold text-navy text-xs tracking-wider uppercase">
-                            {h.days}
-                          </span>
-                          <span className="text-gold">{h.hours}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </ScrollReveal>
+            {/* Map — full width, first */}
+            <ScrollReveal animation="clip-up" duration={1.2}>
+              <div className="w-full h-[350px] md:h-[450px] mb-10">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1467216856004!2d9.967147277826415!3d53.832777772434355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b22e3aa87945af%3A0xcb9c5c4c4e8e9b15!2sLa%20Botte!5e1!3m2!1sde!2sde!4v1775420364143!5m2!1sde!2sde"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Standort Osteria Tintarella"
+                />
+              </div>
+            </ScrollReveal>
 
-                <ScrollReveal delay={0.1} animation="fade-up">
-                  <div className="bg-white p-8 hover:shadow-lg transition-shadow duration-500">
-                    <h3 className="font-bold text-navy text-sm tracking-[0.15em] uppercase mb-5">
-                      Kontakt & Adresse
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <p className="text-gold">
-                        {siteData.address.street}, {siteData.address.zip}{" "}
-                        {siteData.address.city}
-                      </p>
-                      <a
-                        href={`tel:${siteData.phoneRaw}`}
-                        className="text-navy font-bold hover:text-red transition-colors block"
-                      >
-                        {siteData.phone}
-                      </a>
-                      <a
-                        href={`mailto:${siteData.email}`}
-                        className="text-gold hover:text-red transition-colors block"
-                      >
-                        {siteData.email}
-                      </a>
-                      <div className="pt-3 border-t border-navy/5 space-y-1">
-                        <p className="text-xs text-gold/60">{siteData.parking}</p>
-                        <p className="text-xs text-gold/60">{siteData.transit}</p>
+            {/* Info cards — 3 columns on desktop */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <ScrollReveal animation="fade-up">
+                <div className="bg-white p-8 hover:shadow-lg transition-shadow duration-500 h-full">
+                  <h3 className="font-bold text-navy text-sm tracking-[0.15em] uppercase mb-5">
+                    Öffnungszeiten
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    {siteData.openingHours.map((h) => (
+                      <div key={h.days} className="flex justify-between gap-4">
+                        <span className="font-bold text-navy text-xs tracking-wider uppercase">
+                          {h.days}
+                        </span>
+                        <span className="text-gold whitespace-nowrap">{h.hours}</span>
                       </div>
+                    ))}
+                  </div>
+                </div>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.1} animation="fade-up">
+                <div className="bg-white p-8 hover:shadow-lg transition-shadow duration-500 h-full">
+                  <h3 className="font-bold text-navy text-sm tracking-[0.15em] uppercase mb-5">
+                    Kontakt & Adresse
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <p className="text-gold">
+                      {siteData.address.street}
+                      <br />
+                      {siteData.address.zip} {siteData.address.city}
+                    </p>
+                    <a
+                      href={`tel:${siteData.phoneRaw}`}
+                      className="text-navy font-bold hover:text-red transition-colors block"
+                    >
+                      {siteData.phone}
+                    </a>
+                    <a
+                      href={`mailto:${siteData.email}`}
+                      className="text-gold hover:text-red transition-colors block"
+                    >
+                      {siteData.email}
+                    </a>
+                    <div className="pt-3 border-t border-navy/5 space-y-1">
+                      <p className="text-xs text-gold/60">{siteData.parking}</p>
+                      <p className="text-xs text-gold/60">{siteData.transit}</p>
                     </div>
                   </div>
-                </ScrollReveal>
+                </div>
+              </ScrollReveal>
 
-                <ScrollReveal delay={0.2} animation="fade-up">
-                  <a
-                    href={siteData.instagramUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between bg-white p-8 group hover:bg-navy transition-colors duration-500 hover:shadow-lg"
-                  >
-                    <div>
-                      <h3 className="font-bold text-navy text-sm tracking-[0.15em] uppercase group-hover:text-cream transition-colors">
-                        Instagram
-                      </h3>
-                      <p className="text-gold text-sm mt-1 group-hover:text-cream/50 transition-colors">
-                        {siteData.instagram}
-                      </p>
-                    </div>
+              <ScrollReveal delay={0.2} animation="fade-up">
+                <a
+                  href={siteData.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col justify-between bg-white p-8 group hover:bg-navy transition-colors duration-500 hover:shadow-lg h-full"
+                >
+                  <div>
+                    <h3 className="font-bold text-navy text-sm tracking-[0.15em] uppercase group-hover:text-cream transition-colors">
+                      Instagram
+                    </h3>
+                    <p className="text-gold text-sm mt-2 group-hover:text-cream/50 transition-colors">
+                      {siteData.instagram}
+                    </p>
+                    <p className="text-gold/50 text-xs mt-3 group-hover:text-cream/30 transition-colors">
+                      Folgen Sie uns für Einblicke hinter die Kulissen
+                    </p>
+                  </div>
+                  <div className="mt-6 flex items-center gap-2 text-navy group-hover:text-cream transition-colors">
+                    <span className="text-xs font-bold tracking-widest uppercase">Folgen</span>
                     <svg
-                      width="24"
-                      height="24"
+                      width="16"
+                      height="16"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="1.5"
-                      className="text-navy group-hover:text-cream arrow-icon transition-all"
+                      className="arrow-icon"
                     >
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
-                  </a>
-                </ScrollReveal>
-              </div>
-
-              {/* Right: Map */}
-              <ScrollReveal delay={0.15} animation="clip-right" duration={1.4}>
-                <div className="h-full min-h-[400px]">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2364.5!2d9.9597!3d53.8389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sHamburger+Stra%C3%9Fe+75%2C+24568+Kaltenkirchen!5e0!3m2!1sde!2sde!4v1"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0, minHeight: "400px" }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Standort Osteria Tintarella"
-                  />
-                </div>
+                  </div>
+                </a>
               </ScrollReveal>
             </div>
           </div>
