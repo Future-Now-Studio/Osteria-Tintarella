@@ -34,11 +34,11 @@ export default function Home() {
 
             <div className="hero-stagger-1">
               <Image
-                src="/images/logo.png"
+                src="/images/Logo-Rund.png"
                 alt="Osteria Tintarella"
-                width={320}
-                height={80}
-                className="h-auto w-[220px] md:w-[320px] brightness-0 invert"
+                width={240}
+                height={240}
+                className="h-auto w-[160px] md:w-[220px] rounded-full shadow-2xl shadow-black/30"
                 priority
               />
             </div>
