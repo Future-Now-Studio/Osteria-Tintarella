@@ -1,0 +1,58 @@
+{
+  "name": "Osteria Tintarella",
+  "tagline": "Vino · Cucina · Amore",
+  "address": {
+    "street": "Hamburger Straße 75",
+    "zip": "24568",
+    "city": "Kaltenkirchen"
+  },
+  "phone": "+49 (0)4191 4144",
+  "phoneRaw": "+4941914144",
+  "email": "info@osteria-tintarella.com",
+  "instagram": "@osteria_tintarella",
+  "instagramUrl": "https://www.instagram.com/osteria_tintarella/",
+  "parking": "30 Parkplätze vorhanden",
+  "transit": "AKN-Station Kaltenkirchen (300m)",
+  "seats": { "indoor": 100, "terrace": "120–140" },
+  "openingHours": [
+    { "days": "Montag – Freitag", "hours": "12:00 – 14:30 & 17:00 – 22:00" },
+    { "days": "Samstag", "hours": "12:00 – 22:00 (durchgehend)" },
+    { "days": "Sonntag", "hours": "12:00 – 14:30 & 17:00 – 22:00" }
+  ],
+  "opentable": {
+    "rid": "473220",
+    "url": "https://www.opentable.de/r/osteria-tintarella-reservations-kaltenkirchen?restref=473220&lang=de-DE&ot_source=Restaurant%20website"
+  },
+  "hero": {
+    "headline": "Osteria Tintarella",
+    "subline": "Vino · Cucina · Amore",
+    "cta": "Tisch reservieren"
+  },
+  "welcome": {
+    "tagline": "Benvenuti",
+    "headline": "Süditalienisches Urlaubsflair in Kaltenkirchen",
+    "text": "Bei uns sollen sich die Gäste ein bisschen wie im Urlaub fühlen. Gehobene italienische Küche mit sizilianischer Note – viel Fisch, Pasta, Fleischgerichte und Pizza aus unserem Steinofen. Dazu eine Auswahl von über 50 Weinen.",
+    "quote": "Bei uns sollen sich die Leute ein bisschen wie im Urlaub f\u00fchlen.",
+    "quoteAuthor": "Benedetto Imbrogiano"
+  },
+  "highlights": [
+    { "name": "La Vera Pizza Napoletana", "description": "Tomaten, Anchovis, Kapern, schwarze Oliven, Peperoncino", "price": "12,90", "category": "Pizza" },
+    { "name": "Burrata di Bufala con Datterino e San Daniele", "description": "Büffel-Burrata mit Datteltomaten und San-Daniele-Schinken", "price": "14,90", "category": "Antipasti" },
+    { "name": "Gamberoni Aglio e Olio e Peperoncino", "description": "Riesengarnelen in Olivenöl, Knoblauch und Chili", "price": "21,90", "category": "Pesce" },
+    { "name": "Tiramisù Classico", "description": "Klassisches Tiramisù", "price": "8,90", "category": "Dolci" }
+  ],
+  "about": {
+    "headline": "Unsere Geschichte",
+    "intro": "Wo Tradition auf Leidenschaft trifft \u2013 die Familie Imbrogiano bringt s\u00fcditalienisches Lebensgef\u00fchl nach Kaltenkirchen.",
+    "story": "Hinter der Osteria Tintarella steht die italienische Gastronomenfamilie Imbrogiano. In Kaltenkirchen m\u00f6chten sie gehobene italienische K\u00fcche mit sizilianischer Note anbieten \u2013 und ein bisschen s\u00fcditalienisches Urlaubsflair in die Stadt bringen.",
+    "nameOrigin": "'Tintarella' bedeutet 'Sonnenbr\u00e4une' auf Italienisch. 'Das passt dazu, dass sich die Leute bei uns wie im Urlaub f\u00fchlen sollen', sagt Benedetto Imbrogiano. Inspiriert wurde der Name durch einen italienischen Schlager der 50er-Jahre, n\u00e4mlich das Lied 'Tintarella di luna' der S\u00e4ngerin Mina \u2013 'Mondlichtbr\u00e4une'.",
+    "renovation": "Das fr\u00fchere Restaurant 'La Botte' an der Hamburger Stra\u00dfe 75 wurde komplett umgebaut. Der fr\u00fcher gelb gestrichene Raum erstrahlt nun in einem markanten Terrakotta-Ton, s\u00e4mtliche M\u00f6bel wurden erneuert. Eine Ausnahme: die h\u00f6lzerne, massive Bar \u2013 sie hat einen besonderen Charme und wird behutsam erneuert.",
+    "cuisine": "Gehobene italienische Osteria-K\u00fcche mit sizilianischer Note \u2013 viel Fisch, viel Pasta, aber auch Fleischgerichte und Pizza aus dem Steinofen. Dazu eine Fisch- und Fleischvitrine, an der sich der Gast das Steak oder das Meerestier selbst aussuchen kann.",
+    "team": [
+      { "name": "Benedetto Imbrogiano", "role": "Gesch\u00e4ftsf\u00fchrer", "age": 27 },
+      { "name": "Domenico Marsico", "role": "Gesch\u00e4ftsf\u00fchrer", "age": 39 }
+    ],
+    "quote": "Das ist einfach meine Welt \u2013 die Schlager aus dieser Zeit, die Filme, das Lebensgef\u00fchl. La dolce vita eben.",
+    "quoteAuthor": "Salvatore Imbrogiano"
+  }
+}

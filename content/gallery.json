@@ -1,0 +1,10 @@
+{
+  "images": [
+    { "src": "/images/gallery-interior.jpg", "alt": "Innenraum der Osteria Tintarella", "category": "restaurant" },
+    { "src": "/images/gallery-terrasse.jpg", "alt": "Terrasse im Sommer", "category": "restaurant" },
+    { "src": "/images/gallery-bar.jpg", "alt": "Die historische Bar", "category": "restaurant" },
+    { "src": "/images/gallery-wein.jpg", "alt": "Weinauswahl", "category": "restaurant" },
+    { "src": "/images/gallery-abend.jpg", "alt": "Abendstimmung", "category": "restaurant" }
+  ],
+  "categories": ["Alle", "Restaurant"]
+}

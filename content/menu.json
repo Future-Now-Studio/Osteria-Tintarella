@@ -1,0 +1,155 @@
+{
+  "special": {
+    "name": "3-Gang Überraschungsmenü",
+    "price": "49,90",
+    "description": "Lassen Sie sich überraschen"
+  },
+  "speisekarte": [
+    {
+      "id": "aperitif",
+      "name": "Aperitif",
+      "items": [
+        { "name": "Prosecco di Valdobbiadene", "description": "0,1l", "price": "6,90" },
+        { "name": "Franciacorta Rosé", "description": "0,1l", "price": "10,50" },
+        { "name": "Aperol Spritz", "price": "7,90" },
+        { "name": "Hugo", "price": "7,90" },
+        { "name": "Lillet White Berry", "price": "9,90" },
+        { "name": "Limoncello Spritz", "price": "9,90" },
+        { "name": "Campari Soda", "price": "9,90" },
+        { "name": "Negroni", "price": "9,90" },
+        { "name": "Americano", "price": "8,90" },
+        { "name": "Martini Cocktail", "price": "10,90" },
+        { "name": "Martini Bianco, Rosso, Dry", "price": "9,90" },
+        { "name": "Espresso Martini", "price": "13,90" }
+      ]
+    },
+    {
+      "id": "antipasti",
+      "name": "Antipasti",
+      "items": [
+        { "name": "Bruschette al Pomodoro e Basilico", "description": "Geröstetes Brot mit Tomatenwürfeln, Knoblauch, Basilikum und Olivenöl", "price": "8,90" },
+        { "name": "Bufala Datterino e Basilico", "description": "Büffelmozzarella auf Datteltomaten und frischem Basilikum", "price": "12,90" },
+        { "name": "Carpaccio di Manzo", "description": "Rinderfilet-Carpaccio mit Rucola und Parmesan", "price": "13,90" },
+        { "name": "Vitello Tonnato", "description": "Dünn geschnittenes Kalbfleisch mit Thunfischcreme und Kapern", "price": "13,90" },
+        { "name": "Carpaccio di Tonno Pinne Gialle", "description": "Gelbflossen-Thunfisch-Carpaccio", "price": "12,90" },
+        { "name": "Burrata di Bufala con Datterino e San Daniele", "description": "Büffel-Burrata mit Datteltomaten und San-Daniele-Schinken", "price": "14,90" },
+        { "name": "Composizione di Antipasti del Tintarella", "description": "Komposition klassischer italienischer Vorspeisen", "price": "13,90" },
+        { "name": "Calamaretti Spadellate alle Erbe", "description": "In der Pfanne geschwenkte Baby-Tintenfische mit Kräutern", "price": "14,90" }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "items": [
+        { "name": "Spaghetti all'Aglio, Olio e Peperoncino", "description": "Spaghetti mit Knoblauch, Peperoncino und kaltgepresstem Olivenöl", "price": "10,90" },
+        { "name": "Penne all'Arrabbiata", "description": "Penne in scharfer Knoblauch-Tomatensauce mit Basilikum", "price": "10,90" },
+        { "name": "Tagliatelle al Salmone", "description": "Bandnudeln mit frischen Lachswürfeln in Tomaten-Sahnesauce", "price": "14,90" },
+        { "name": "Lasagna alla Bolognese", "description": "Lasagne mit Hackfleisch nach Bolognese-Art", "price": "14,90" },
+        { "name": "Paccheri Artigianali alla Norma", "description": "Pasta mit Tomatensauce, gebratenen Auberginenwürfeln und Ricotta", "price": "13,90" },
+        { "name": "Spaghettini con Gamberoni e Datterino di Pachino", "description": "Spaghettini mit Riesengarnelen, Knoblauch, sizilianischen Datteltomaten und Basilikum", "price": "19,90" },
+        { "name": "Tagliatelle al Gorgonzola e Funghi", "description": "Hausgemachte Bandnudeln mit Gorgonzolasauce und Pilzen", "price": "13,90" }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "items": [
+        { "name": "Faccia di Vecchia", "description": "Pizzabrot mit Oregano und kaltgepresstem Olivenöl", "price": "5,90" },
+        { "name": "Pizza Margherita", "description": "Tomaten, Mozzarella Fior di Latte, Basilikum", "price": "10,90" },
+        { "name": "Pizza con Salsiccia e Funghi", "description": "Hausmacher Wurst und Kräuterseitlinge", "price": "13,90" },
+        { "name": "La Vera Pizza Napoletana", "description": "Tomaten, Anchovis, Kapern, schwarze Oliven, Peperoncino", "price": "12,90" },
+        { "name": "Pizza alla Norma", "description": "Tomatensauce, Mozzarella Fior di Latte, Aubergine, Basilikum, Ricotta", "price": "13,90" },
+        { "name": "Pizza Tintarella", "description": "Frische Tomatenwürfel, Rucola, Burrata Stracciata", "price": "16,90" },
+        { "name": "Pizza con Rucola, Parmigiano e San Daniele", "description": "Mozzarella Fior di Latte, Rucola, Parmesan, San-Daniele-Schinken", "price": "14,90" },
+        { "name": "Pizza Diavola", "description": "Scharfe Salami und Paprika", "price": "14,90" },
+        { "name": "Pizza Tonno e Cipolla", "description": "Thunfisch und Zwiebeln", "price": "14,90" },
+        { "name": "Pizza Capricciosa", "description": "Oliven, Schinken, Pilze, Artischocken", "price": "13,90" },
+        { "name": "Pizza 4 Formaggi", "description": "Vier-Käse-Pizza", "price": "14,90" },
+        { "name": "Pizza Rucola", "description": "Rucola, Kirschtomaten, Parmigiano", "price": "15,90" }
+      ]
+    },
+    {
+      "id": "pesce",
+      "name": "Pesce",
+      "items": [
+        { "name": "Trancio di Salmone con Datterino e Basilico", "description": "Lachsfilet mit sizilianischen Datteltomaten und Basilikum", "price": "28,90" },
+        { "name": "Orata Aperta Tintarella", "description": "Filetierte Dorade mit sizilianischen Datteltomaten, Kapern und Oliven", "price": "22,90" },
+        { "name": "Gamberoni Aglio e Olio e Peperoncino", "description": "Riesengarnelen in Olivenöl, Knoblauch und Chili", "price": "21,90" },
+        { "name": "Caciucco di Pesce con Crostini all'Aglio (grande)", "description": "Neapolitanische Fischsuppe mit Knoblauch-Crostini, groß", "price": "23,90" },
+        { "name": "Caciucco di Pesce con Crostini all'Aglio (piccolo)", "description": "Neapolitanische Fischsuppe mit Knoblauch-Crostini, klein", "price": "19,90" }
+      ]
+    },
+    {
+      "id": "carne",
+      "name": "Carne",
+      "items": [
+        { "name": "Fegato di Vitello al Burro e Salvia", "description": "Kalbsleber in Salbeibutter mit Kartoffelpüree", "price": "21,90" },
+        { "name": "Saltimbocca alla Romana", "description": "Kalbsmedaillon mit San-Daniele-Schinken, Salbei und Gemüsebeilage", "price": "22,90" },
+        { "name": "Rognoni alla Senape", "description": "Kalbsnieren in Dijon-Senfsauce mit Kartoffelpüree", "price": "21,90" }
+      ]
+    },
+    {
+      "id": "insalate",
+      "name": "Insalate & Minestre",
+      "items": [
+        { "name": "Insalata di Stagione", "description": "Gemischter Saisonsalat", "price": "7,90" },
+        { "name": "Insalata di Pomodoro Datterino con Capperi e Basilico", "description": "Datteltomatensalat mit roten Zwiebeln, Kapern und Basilikum", "price": "11,90" },
+        { "name": "Rucola con Parmigiano Ciliegino e Aceto Balsamico", "description": "Rucola mit Parmesanspänen, Kirschtomaten und altem Balsamico", "price": "10,90" },
+        { "name": "Gamberoni su Insalata di Stagione", "description": "Riesengarnelen auf Saisonsalat", "price": "18,90" },
+        { "name": "Minestrone di Verdure e Fagioli", "description": "Italienische Gemüsesuppe mit Borlotti-Bohnen", "price": "6,90" },
+        { "name": "Vellutata di Pomodoro", "description": "Sizilianische Tomatencremesuppe", "price": "6,90" },
+        { "name": "Insalata di Finocchi e Arance Siciliane", "description": "Sizilianischer Orangen-Fenchel-Salat", "price": "10,90" }
+      ]
+    },
+    {
+      "id": "weine",
+      "name": "Offene Weine & Biere",
+      "items": [
+        { "name": "Weisswein", "description": "¼ l / ½ l", "price": "6,50 / 13,00" },
+        { "name": "Rosé", "description": "¼ l / ½ l", "price": "6,50 / 13,00" },
+        { "name": "Rotwein", "description": "¼ l / ½ l", "price": "6,50 / 13,00" },
+        { "name": "Fellini Weiss", "description": "Hauswein, 0,2 l", "price": "7,90" },
+        { "name": "Fellini Rot", "description": "Hauswein, 0,2 l", "price": "8,90" },
+        { "name": "König Pilsner", "description": "0,25 l / 0,40 l", "price": "3,90 / 4,10" },
+        { "name": "König Pilsner Alkoholfrei", "description": "0,33 l", "price": "3,90" },
+        { "name": "Weizenbier", "description": "0,5 l", "price": "6,50" },
+        { "name": "Weizen Alkoholfrei", "description": "0,5 l", "price": "6,50" }
+      ]
+    }
+  ],
+  "dessertkarte": [
+    {
+      "id": "dolci",
+      "name": "Dolci",
+      "items": [
+        { "name": "Waldbeeren mit Mascarpone", "description": "Frische Waldbeeren mit Mascarponecreme", "price": "8,90" },
+        { "name": "Tiramisù Classico", "description": "Klassisches Tiramisù", "price": "8,90" },
+        { "name": "Profiteroles al Cioccolato", "description": "Windbeutel mit Schokoladensauce", "price": "8,90" },
+        { "name": "Zabaglione mit Vanille Ei", "description": "Weinschaumcreme mit Vanille", "price": "8,90" },
+        { "name": "Tartufo Eis", "description": "Trüffeleis", "price": "8,90" },
+        { "name": "Cassata Eis", "description": "Sizilianisches Cassata-Eis", "price": "8,90" },
+        { "name": "Crème Brûlée", "description": "Gebrannte Creme", "price": "8,90" },
+        { "name": "Panna Cotta", "description": "Italienischer Pudding", "price": "8,90" }
+      ]
+    },
+    {
+      "id": "formaggi",
+      "name": "Formaggi",
+      "items": [
+        { "name": "Pecorino Sardo e salsa di fichi", "description": "Pecorino-Käse mit Feigensauce", "price": "18,90" },
+        { "name": "Asiago con marmellata al pomodoro verde", "description": "Asiago-Käse mit grüner Tomatenmarmelade", "price": "17,50" },
+        { "name": "Gorgonzola con Pere e Miele", "description": "Gorgonzola mit Birne und Honig", "price": "16,50" },
+        { "name": "Composizione di Formaggi pregiati misti", "description": "Komposition gemischter italienischer Premiumkäse", "price": "21,50" }
+      ]
+    },
+    {
+      "id": "dessertweine",
+      "name": "Dessertweine",
+      "items": [
+        { "name": "Zibibbo", "description": "Süßer Muskateller aus Sizilien", "price": "11,50" },
+        { "name": "Vin Santo", "description": "Toskanischer Dessertwein", "price": "13,50" },
+        { "name": "Passito di Pantelleria", "description": "Edler Süßwein von der Insel Pantelleria", "price": "17,50" }
+      ]
+    }
+  ]
+}
