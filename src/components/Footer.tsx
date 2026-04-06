@@ -56,10 +56,10 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href="mailto:info@osteria-tintarella.com"
+                  href="mailto:info@osteria-tintarella.de"
                   className="text-cream hover:text-red transition-colors"
                 >
-                  info@osteria-tintarella.com
+                  info@osteria-tintarella.de
                 </a>
               </p>
             </div>
