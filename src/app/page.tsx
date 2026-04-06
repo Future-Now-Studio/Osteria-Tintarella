@@ -62,10 +62,10 @@ export default function Home() {
                 Jetzt reservieren
               </a>
               <a
-                href={`tel:${siteData.phoneRaw}`}
+                href="/speisekarte"
                 className="btn-ghost border border-cream/30 text-cream px-10 py-4 font-bold text-sm tracking-widest uppercase text-center"
               >
-                Anrufen
+                Speisekarte
               </a>
             </div>
           </div>
@@ -105,13 +105,13 @@ export default function Home() {
         </section>
 
         {/* ═══════════════════ ZITAT — Highlighted ═══════════════════ */}
-        <section className="relative bg-navy py-14 md:py-20 px-6">
-          <div className="max-w-3xl mx-auto text-center">
+        <section className="relative py-14 md:py-20 px-6 noise-overlay">
+          <div className="relative z-10 max-w-3xl mx-auto text-center">
             <ScrollReveal animation="scale-in">
-              <blockquote className="text-2xl md:text-3xl italic text-cream/90 leading-relaxed">
+              <blockquote className="text-2xl md:text-3xl italic text-navy/80 leading-relaxed">
                 &laquo;{siteData.welcome.quote}&raquo;
               </blockquote>
-              <p className="mt-4 text-gold-light/80 text-sm tracking-widest uppercase">
+              <p className="mt-4 text-gold/60 text-sm tracking-widest uppercase">
                 — {siteData.welcome.quoteAuthor}
               </p>
             </ScrollReveal>
