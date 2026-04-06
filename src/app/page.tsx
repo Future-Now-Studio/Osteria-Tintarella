@@ -252,7 +252,7 @@ export default function Home() {
                   </p>
                 </ScrollReveal>
                 <TextReveal delay={0.1} className="text-4xl md:text-5xl lg:text-6xl font-bold text-cream leading-[1.1]">
-                  Von Neapel nach Kaltenkirchen
+                  Von Sizilien nach Kaltenkirchen
                 </TextReveal>
               </div>
 
