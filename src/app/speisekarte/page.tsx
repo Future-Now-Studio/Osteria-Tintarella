@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
-import MenuTabs from "@/components/MenuTabs";
-import menuData from "../../../content/menu.json";
+import SpeisekarteContent from "./SpeisekarteContent";
 
 export const metadata: Metadata = {
   title: "Speisekarte — Osteria Tintarella",
@@ -31,8 +30,8 @@ export default function SpeisekartePage() {
             </p>
           </div>
 
-          {/* Menu Tabs */}
-          <MenuTabs categories={menuData.speisekarte} />
+          {/* Menu Tabs — client component reads ?tab= */}
+          <SpeisekarteContent />
 
           {/* Link to Dessertkarte */}
           <div className="mt-12 text-center border-t border-navy/10 pt-10">

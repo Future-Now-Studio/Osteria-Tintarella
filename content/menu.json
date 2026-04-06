@@ -105,9 +105,9 @@
       "id": "weine",
       "name": "Offene Weine & Biere",
       "items": [
-        { "name": "Weisswein", "description": "¼ l / ½ l", "price": "6,50 / 13,00" },
-        { "name": "Rosé", "description": "¼ l / ½ l", "price": "6,50 / 13,00" },
-        { "name": "Rotwein", "description": "¼ l / ½ l", "price": "6,50 / 13,00" },
+        { "name": "Weisswein", "description": "0,25l / 0,5l", "price": "6,50 / 13,00" },
+        { "name": "Rosé", "description": "0,25l / 0,5l", "price": "6,50 / 13,00" },
+        { "name": "Rotwein", "description": "0,25l / 0,5l", "price": "6,50 / 13,00" },
         { "name": "Fellini Weiss", "description": "Hauswein, 0,2 l", "price": "7,90" },
         { "name": "Fellini Rot", "description": "Hauswein, 0,2 l", "price": "8,90" },
         { "name": "König Pilsner", "description": "0,25 l / 0,40 l", "price": "3,90 / 4,10" },

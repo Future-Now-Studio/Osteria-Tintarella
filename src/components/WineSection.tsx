@@ -52,7 +52,7 @@ export default function WineSection() {
           <ScrollReveal delay={0.45} animation="fade-up">
             <div className="mt-10">
               <Link
-                href="/speisekarte"
+                href="/speisekarte#weine"
                 className="btn-ghost inline-block border border-cream/30 text-cream px-8 py-3.5 text-sm font-bold tracking-widest uppercase text-center"
               >
                 Weinkarte entdecken

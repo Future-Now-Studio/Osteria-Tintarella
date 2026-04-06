@@ -17,10 +17,13 @@ interface Category {
 
 interface MenuTabsProps {
   categories: Category[];
+  defaultTab?: string;
 }
 
-export default function MenuTabs({ categories }: MenuTabsProps) {
-  const [activeTab, setActiveTab] = useState(categories[0]?.id ?? "");
+export default function MenuTabs({ categories, defaultTab }: MenuTabsProps) {
+  const [activeTab, setActiveTab] = useState(
+    (defaultTab && categories.some((c) => c.id === defaultTab) ? defaultTab : categories[0]?.id) ?? ""
+  );
 
   const activeCategory = categories.find((c) => c.id === activeTab);
 
