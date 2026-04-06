@@ -125,11 +125,11 @@
         { "name": "Waldbeeren mit Mascarpone", "description": "Frische Waldbeeren mit Mascarponecreme", "price": "8,90" },
         { "name": "Tiramisù Classico", "description": "Klassisches Tiramisù", "price": "8,90" },
         { "name": "Profiteroles al Cioccolato", "description": "Windbeutel mit Schokoladensauce", "price": "8,90" },
-        { "name": "Zabaglione mit Vanille Ei", "description": "Weinschaumcreme mit Vanille", "price": "8,90" },
+        { "name": "Zabaglione mit Vanille Eis", "description": "Weinschaumcreme mit Vanille", "price": "8,90" },
         { "name": "Tartufo Eis", "description": "Trüffeleis", "price": "8,90" },
         { "name": "Cassata Eis", "description": "Sizilianisches Cassata-Eis", "price": "8,90" },
         { "name": "Crème Brûlée", "description": "Gebrannte Creme", "price": "8,90" },
-        { "name": "Panna Cotta", "description": "Italienischer Pudding", "price": "8,90" }
+        { "name": "Panna Cotta", "price": "8,90" }
       ]
     },
     {
