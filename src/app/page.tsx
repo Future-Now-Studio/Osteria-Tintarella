@@ -235,7 +235,7 @@ export default function Home() {
         {/* ═══════════════════ ÜBER UNS TEASER — Parallax + story ═══════════════════ */}
         <section className="relative min-h-[75vh] flex items-center overflow-hidden">
           <ParallaxImage
-            src="/images/umbau.webp"
+            src="/images/Umbau.webp"
             alt="Osteria Tintarella Umbau"
             speed={0.2}
             scale={1.2}
