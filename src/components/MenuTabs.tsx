@@ -55,12 +55,17 @@ export default function MenuTabs({ categories, defaultTab }: MenuTabsProps) {
               i < (activeCategory.items.length - 1) ? "border-b border-navy/5" : ""
             }`}
           >
-            <div>
-              <div className="flex items-center gap-2 flex-wrap">
+            <div className="flex justify-between items-baseline gap-4">
+              <div className="flex-1 min-w-0">
                 <h3 className="font-bold text-navy">{item.name}</h3>
+                {item.description && (
+                  <p className="text-sm text-gold mt-0.5">{item.description}</p>
+                )}
               </div>
-              {item.description && (
-                <p className="text-sm text-gold mt-0.5">{item.description}</p>
+              {item.price && (
+                <span className="text-red font-bold whitespace-nowrap flex-shrink-0">
+                  {item.price}
+                </span>
               )}
             </div>
           </div>

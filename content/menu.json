@@ -60,7 +60,6 @@
         { "name": "La Vera Pizza Napoletana", "description": "Tomaten, Anchovis, Kapern, schwarze Oliven, Peperoncino", "price": "12,90" },
         { "name": "Pizza alla Norma", "description": "Tomatensauce, Mozzarella Fior di Latte, Aubergine, Basilikum, Ricotta", "price": "13,90" },
         { "name": "Pizza Tintarella", "description": "Frische Tomatenwürfel, Rucola, Burrata Stracciata", "price": "16,90" },
-        { "name": "Pizza con Rucola, Parmigiano e San Daniele", "description": "Mozzarella Fior di Latte, Rucola, Parmesan, San-Daniele-Schinken", "price": "14,90" },
         { "name": "Pizza Diavola", "description": "Scharfe Salami und Paprika", "price": "14,90" },
         { "name": "Pizza Tonno e Cipolla", "description": "Thunfisch und Zwiebeln", "price": "14,90" },
         { "name": "Pizza Capricciosa", "description": "Oliven, Schinken, Pilze, Artischocken", "price": "13,90" },
@@ -72,7 +71,7 @@
       "id": "pesce",
       "name": "Pesce",
       "items": [
-        { "name": "Trancio di Salmone con Datterino e Basilico", "description": "Lachsfilet mit sizilianischen Datteltomaten und Basilikum", "price": "28,90" },
+        { "name": "Trancio di Salmone con Datterino e Basilico", "description": "Lachsfilet mit sizilianischen Datteltomaten und Basilikum", "price": "23,90" },
         { "name": "Orata Aperta Tintarella", "description": "Filetierte Dorade mit sizilianischen Datteltomaten, Kapern und Oliven", "price": "22,90" },
         { "name": "Gamberoni Aglio e Olio e Peperoncino", "description": "Riesengarnelen in Olivenöl, Knoblauch und Chili", "price": "21,90" },
         { "name": "Caciucco di Pesce con Crostini all'Aglio (grande)", "description": "Neapolitanische Fischsuppe mit Knoblauch-Crostini, groß", "price": "23,90" },
