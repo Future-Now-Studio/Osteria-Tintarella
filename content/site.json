@@ -15,9 +15,9 @@
   "transit": "AKN-Station Kaltenkirchen (300m)",
   "seats": { "indoor": 100, "terrace": "120–140" },
   "openingHours": [
-    { "days": "Montag – Freitag", "hours": "12:00 – 14:30 & 17:00 – 22:00" },
-    { "days": "Samstag", "hours": "12:00 – 22:00" },
-    { "days": "Sonntag", "hours": "12:00 – 14:30 & 17:00 – 22:00" }
+    { "days": "Montag – Freitag", "hours": "11:30 – 14:30 & 17:00 – 22:00" },
+    { "days": "Samstag", "hours": "11:30 – 22:00" },
+    { "days": "Sonntag", "hours": "11:30 – 14:30 & 17:00 – 22:00" }
   ],
   "opentable": {
     "rid": "473220",
