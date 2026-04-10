@@ -95,8 +95,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <div>Hamburger Straße 75, 24568 Kaltenkirchen</div>
           <div className="text-xs space-y-1">
             <div>Mo – Fr: 11:30 – 14:30 & 17:00 – 22:00</div>
-            <div>Sa: 11:30 – 22:00</div>
-            <div>So: 11:30 – 14:30 & 17:00 – 22:00</div>
+            <div>Sa: 12:00 – 22:00</div>
+            <div>So: 12:00 – 22:00</div>
           </div>
         </div>
       </div>
