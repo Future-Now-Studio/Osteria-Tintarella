@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
@@ -18,12 +20,12 @@ export default function Home() {
         <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
           {/* Ken Burns background — mobile / desktop */}
           <img
-            src="/images/pasta-mobile.jpg"
+            src="/New_Images/J68A8005.jpg"
             alt="Osteria Tintarella"
             className="absolute inset-0 w-full h-full object-cover hero-ken-burns md:hidden"
           />
           <img
-            src="/images/pasta.jpg"
+            src="/New_Images/J68A8005.jpg"
             alt="Osteria Tintarella"
             className="absolute inset-0 w-full h-full object-cover hero-ken-burns hidden md:block"
           />
@@ -34,7 +36,6 @@ export default function Home() {
 
           {/* Content — staggered cinematic entrance */}
           <div className="relative z-10 flex flex-col items-center px-4">
-            {/* Decorative line */}
             <div className="w-[60px] h-[1px] bg-gold-light/50 hero-line mb-8" />
 
             <div className="hero-stagger-1">
@@ -109,7 +110,7 @@ export default function Home() {
           <div className="relative z-10 max-w-3xl mx-auto text-center">
             <ScrollReveal animation="scale-in">
               <blockquote className="text-2xl md:text-3xl italic text-navy/80 leading-relaxed">
-                &laquo;{siteData.welcome.quote}&raquo;
+                «{siteData.welcome.quote}»
               </blockquote>
               <p className="mt-4 text-gold/60 text-sm tracking-widest uppercase">
                 — {siteData.welcome.quoteAuthor}
@@ -120,22 +121,21 @@ export default function Home() {
 
         {/* ═══════════════════ SPEISEKARTE — Split mit clip-reveal ═══════════════════ */}
         <section className="flex flex-col lg:flex-row min-h-[70vh]">
-          {/* Image LEFT — parallax + clip reveal */}
           <ScrollReveal
             animation="clip-left"
             duration={1.4}
             className="lg:w-1/2 h-[50vh] lg:h-auto relative"
           >
             <ParallaxImage
-              src="/images/bruschetta.jpg"
-              alt="Restaurant Ambiente"
+              src="/New_Images/J68A8059.jpg"
+              alt="Unsere Speisen"
               speed={0.12}
               className="absolute inset-0"
+              objectPosition="bottom" 
               overlay
             />
           </ScrollReveal>
 
-          {/* Content RIGHT */}
           <div className="lg:w-1/2 bg-navy px-6 py-20 md:px-12 lg:px-16 lg:py-28 flex flex-col justify-center">
             <div className="max-w-lg mx-auto lg:mx-0 lg:mr-auto lg:ml-16">
               <ScrollReveal animation="fade-in">
@@ -181,10 +181,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ═══════════════════ WEINE — Content links, Bild rechts ═══════════════════ */}
         <WineSection />
 
-        {/* ═══════════════════ RESERVIERUNG STÖRER — Breathing glow ═══════════════════ */}
+        {/* ═══════════════════ RESERVIERUNG STÖRER ═══════════════════ */}
         <section
           id="reservierung"
           className="relative py-28 md:py-36 px-4 bg-cream-dark noise-overlay reservation-glow"
@@ -232,7 +231,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ═══════════════════ ÜBER UNS TEASER — Parallax + story ═══════════════════ */}
+        {/* ═══════════════════ ÜBER UNS TEASER ═══════════════════ */}
         <section className="relative min-h-[75vh] flex items-center overflow-hidden">
           <ParallaxImage
             src="/images/Umbau.webp"
@@ -240,6 +239,7 @@ export default function Home() {
             speed={0.2}
             scale={1.2}
             className="absolute inset-0"
+            objectPosition="center"
           />
           <div className="absolute inset-0 bg-navy/60" />
 
@@ -263,7 +263,7 @@ export default function Home() {
                       {siteData.about.intro}
                     </p>
                     <blockquote className="mt-6 italic text-cream/80 text-base">
-                      &laquo;{siteData.about.quote}&raquo;
+                      «{siteData.about.quote}»
                     </blockquote>
                     <p className="mt-2 text-gold-light/80 text-xs tracking-widest uppercase">
                       — {siteData.about.quoteAuthor}
@@ -307,11 +307,10 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            {/* Map — full width, first */}
             <ScrollReveal animation="clip-up" duration={1.2}>
               <div className="w-full h-[350px] md:h-[450px] mb-10">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1467216856004!2d9.967147277826415!3d53.832777772434355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b22e3aa87945af%3A0xcb9c5c4c4e8e9b15!2sLa%20Botte!5e1!3m2!1sde!2sde!4v1775420364143!5m2!1sde!2sde"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.465431604135!2d9.9678!3d53.8341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDUwJzAyLjgiTiA5wrA1OCc0NC4xIkU!5e0!3m2!1sde!2sde!4v1710000000000!5m2!1sde!2sde"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -323,7 +322,6 @@ export default function Home() {
               </div>
             </ScrollReveal>
 
-            {/* Info cards — 3 columns on desktop */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <ScrollReveal animation="fade-up">
                 <div className="bg-white p-8 hover:shadow-lg transition-shadow duration-500 h-full">
@@ -366,10 +364,6 @@ export default function Home() {
                     >
                       {siteData.email}
                     </a>
-                    <div className="pt-3 border-t border-navy/5 space-y-1">
-                      <p className="text-xs text-gold/60">{siteData.parking}</p>
-                      <p className="text-xs text-gold/60">{siteData.transit}</p>
-                    </div>
                   </div>
                 </div>
               </ScrollReveal>
@@ -388,21 +382,10 @@ export default function Home() {
                     <p className="text-gold text-sm mt-2 group-hover:text-cream/50 transition-colors">
                       {siteData.instagram}
                     </p>
-                    <p className="text-gold/50 text-xs mt-3 group-hover:text-cream/30 transition-colors">
-                      Folgen Sie uns für Einblicke hinter die Kulissen
-                    </p>
                   </div>
                   <div className="mt-6 flex items-center gap-2 text-navy group-hover:text-cream transition-colors">
                     <span className="text-xs font-bold tracking-widest uppercase">Folgen</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      className="arrow-icon"
-                    >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                       <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                   </div>

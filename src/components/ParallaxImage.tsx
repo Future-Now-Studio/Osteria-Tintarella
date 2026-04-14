@@ -9,6 +9,7 @@ interface ParallaxImageProps {
   scale?: number; // initial scale to allow room for parallax
   className?: string;
   overlay?: boolean;
+  objectPosition?: string; // Neu hinzugefügt für präzise Bildkontrolle
 }
 
 export default function ParallaxImage({
@@ -18,6 +19,7 @@ export default function ParallaxImage({
   scale = 1.15,
   className = "",
   overlay = false,
+  objectPosition = "center", // Standardmäßig zentriert
 }: ParallaxImageProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [offset, setOffset] = useState(0);
@@ -37,8 +39,12 @@ export default function ParallaxImage({
       if (!el) return;
       const rect = el.getBoundingClientRect();
       const windowH = window.innerHeight;
+      
+      // Berechnung des Fortschritts (0 bis 1), während das Bild den Viewport passiert
       const progress = (windowH - rect.top) / (windowH + rect.height);
       const clamped = Math.max(0, Math.min(1, progress));
+      
+      // Zentrierung des Offsets bei progress 0.5
       setOffset((clamped - 0.5) * speed * 100);
     };
 
@@ -58,6 +64,8 @@ export default function ParallaxImage({
         alt={alt}
         className="absolute inset-0 w-full h-full object-cover will-change-transform"
         style={{
+          // Kombiniert Parallax-Verschiebung mit der gewünschten Bildposition
+          objectPosition: objectPosition,
           transform: isVisible
             ? `scale(${scale}) translateY(${offset}px)`
             : `scale(${scale})`,

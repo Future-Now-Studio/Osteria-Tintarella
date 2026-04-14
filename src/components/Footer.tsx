@@ -25,12 +25,12 @@ export default function Footer() {
             </h3>
             <div className="space-y-2 text-sm text-cream/70">
               <div className="flex justify-between max-w-[260px] mx-auto md:mx-0">
-                <span>Mo – Fr</span>
-                <span>11:30 – 14:30 & 17 – 22</span>
+                <span>Mo</span>
+                <span>Ruhetag</span>
               </div>
               <div className="flex justify-between max-w-[260px] mx-auto md:mx-0">
-                <span>Samstag</span>
-                <span>12 – 22</span>
+                <span>Di - Fr</span>
+                <span>11:30 – 14:30 & 17 – 22</span>
               </div>
               <div className="flex justify-between max-w-[260px] mx-auto md:mx-0">
                 <span>Sonntag</span>

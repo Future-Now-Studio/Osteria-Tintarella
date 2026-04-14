@@ -15,7 +15,7 @@ export default function WineSection() {
         className="lg:w-1/2 h-[50vh] lg:h-auto relative"
       >
         <ParallaxImage
-          src="/images/gallery-wein.jpg"
+          src="/New_Images/J68A7881.jpg"
           alt="Weinauswahl"
           speed={0.12}
           className="absolute inset-0"
