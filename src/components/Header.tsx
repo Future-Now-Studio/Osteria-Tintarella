@@ -44,6 +44,7 @@ export default function Header() {
 
           <nav className="hidden lg:flex items-center gap-10">
             {[
+              { href: "/mittagskarte", label: "Mittagskarte" },
               { href: "/speisekarte", label: "Speisekarte" },
               { href: "/ueber-uns", label: "Über uns" },
             ].map(({ href, label }) => (

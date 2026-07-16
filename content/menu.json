@@ -150,5 +150,52 @@
         { "name": "Passito di Pantelleria", "description": "Edler Süßwein von der Insel Pantelleria", "price": "17,50" }
       ]
     }
+  ],
+  "mittagskarte": [
+    {
+      "id": "antipasti-mittag",
+      "name": "Antipasti",
+      "items": [
+        { "name": "Carpaccio", "price": "5,90" },
+        { "name": "Carpaccio vom Rind", "price": "8,90" },
+        { "name": "Aubergine Auflauf", "price": "8,90" },
+        { "name": "Büffel Mozzarella mit Kirschtomaten & Basilico", "price": "9,90" }
+      ]
+    },
+    {
+      "id": "pasta-mittag",
+      "name": "Pasta",
+      "items": [
+        { "name": "Rigatoni Gorgonzola & Fungi", "price": "9,90" },
+        { "name": "Tagliatelle mit Pfifferlinge", "price": "9,90" },
+        { "name": "Tagliolini mit Flusskrebse", "price": "9,90" },
+        { "name": "Pasta al forno", "price": "9,90" }
+      ]
+    },
+    {
+      "id": "pizza-mittag",
+      "name": "Pizza",
+      "items": [
+        { "name": "Pizza Birne, Ziegenkäse & Honig", "price": "9,90" },
+        { "name": "Pizza Diavola", "price": "9,90" },
+        { "name": "Pizza Thunfisch & Zwiebel", "price": "9,90" }
+      ]
+    },
+    {
+      "id": "fisch-mittag",
+      "name": "Fisch",
+      "items": [
+        { "name": "Zanderfilet in Zitrone-Kapern-Sauce", "price": "13,90" },
+        { "name": "Calamaretti alla Livornese", "price": "13,90" }
+      ]
+    },
+    {
+      "id": "fleisch-mittag",
+      "name": "Fleisch",
+      "items": [
+        { "name": "Schweinefilet in Grüner-Pfeffer-Sauce", "price": "13,90" },
+        { "name": "Tagliata vom Rumpsteak", "price": "13,90" }
+      ]
+    }
   ]
 }

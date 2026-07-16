@@ -57,6 +57,13 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             Startseite
           </Link>
           <Link
+            href="/mittagskarte"
+            onClick={onClose}
+            className="text-navy font-charter font-bold text-2xl tracking-wide"
+          >
+            Mittagskarte
+          </Link>
+          <Link
             href="/speisekarte"
             onClick={onClose}
             className="text-navy font-charter font-bold text-2xl tracking-wide"
