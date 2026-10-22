@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingCallButton from "@/components/FloatingCallButton";
-import MenuTabs from "@/components/MenuTabs";
-import menuData from "../../../content/menu.json";
 
 export const metadata: Metadata = {
   title: "Mittagskarte — Osteria Tintarella",
   description:
-    "Unsere Mittagskarte: Antipasti, Pasta, Pizza, Fisch und Fleisch. Dienstag bis Freitag von 11:30 bis 14:30 Uhr.",
+    "Wöchentlich wechselnder Mittagstisch. Dienstag bis Freitag von 11:30 bis 14:30 Uhr.",
 };
 
 export default function MittagskartePage() {
@@ -29,7 +27,14 @@ export default function MittagskartePage() {
             </p>
           </div>
 
-          <MenuTabs categories={menuData.mittagskarte} />
+          <div className="text-center max-w-xl mx-auto">
+            <p className="text-navy text-xl md:text-2xl leading-relaxed">
+              Bei uns gibt es einen wöchentlich wechselnden Mittagstisch.
+            </p>
+            <p className="mt-4 text-navy/70 leading-relaxed">
+              Fragen Sie gern nach den aktuellen Gerichten der Woche.
+            </p>
+          </div>
 
           <div className="mt-12 text-center border-t border-navy/10 pt-10">
             <a
