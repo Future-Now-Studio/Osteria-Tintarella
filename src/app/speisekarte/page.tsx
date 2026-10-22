@@ -30,6 +30,19 @@ export default function SpeisekartePage() {
             </p>
           </div>
 
+          {/* Mittagstisch Teaser */}
+          <div className="mb-10 border-l-2 border-red bg-white px-6 py-5 md:px-8 md:py-6">
+            <span className="text-red text-[10px] font-bold tracking-[0.4em] uppercase">
+              Pranzo
+            </span>
+            <h2 className="mt-2 text-2xl font-bold text-navy">Mittagstisch</h2>
+            <p className="mt-2 text-gold leading-relaxed">
+              Dienstag bis Freitag von 11:30 bis 14:30 Uhr gibt es bei uns
+              einen wöchentlich wechselnden Mittagstisch. Fragen Sie gern nach
+              den aktuellen Gerichten der Woche.
+            </p>
+          </div>
+
           {/* Menu Tabs — client component reads ?tab= */}
           <SpeisekarteContent />
 

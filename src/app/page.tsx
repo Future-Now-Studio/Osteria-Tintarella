@@ -161,6 +161,18 @@ export default function Home() {
                 </p>
               </ScrollReveal>
 
+              <ScrollReveal delay={0.35} animation="fade-up">
+                <div className="mt-8 border-l-2 border-red pl-5">
+                  <p className="text-gold-light text-[10px] tracking-[0.4em] uppercase">
+                    Mittagstisch · Di – Fr 11:30 – 14:30
+                  </p>
+                  <p className="mt-2 text-cream text-lg leading-relaxed">
+                    Jede Woche ein neuer Mittagstisch — fragen Sie nach den
+                    Gerichten der Woche.
+                  </p>
+                </div>
+              </ScrollReveal>
+
               <ScrollReveal delay={0.45} animation="fade-up">
                 <div className="mt-10 flex flex-col sm:flex-row gap-4">
                   <Link
